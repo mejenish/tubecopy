@@ -1,0 +1,15 @@
+{
+  "name": "tubecopy",
+  "version": "1.0.0",
+  "description": "This is a wannabe YouTube clone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "Backend"
+  ],
+  "author": "Jenish Bhandari",
+  "license": "ISC"
+}
