@@ -1,4 +1,7 @@
 import mongoose, { Schema } from "mongoose";
+import jwt from "jsonwebtoken";
+import bcrypt from "bcrypt";
+
 const userSchema = new Schema({
     username: {
         type: String,
@@ -28,10 +31,17 @@ const userSchema = new Schema({
     coverImage: {
         type: String, //cloudinary url
     },
-    watchHistory:[{
+    watchHistory: [{
         type: Schema.Types.ObjectId,
         ref: "Video"
-    }]
+    }],
+    password: {
+        type: String,
+        required: [true, "Password is required"],
+    },
+    refreshToken: {
+        type: String,
+    }
 }, { timestamps: true });
 
 
