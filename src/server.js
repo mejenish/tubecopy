@@ -20,6 +20,7 @@ connectDB().then(()=>{
     console.error("MONGODB Connection FAILED: ", error);
 });
 
+
 // (async () => {
 //     try {
 //         const dbConnect = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
